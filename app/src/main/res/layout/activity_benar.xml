@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/btnclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/close"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/dialog_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:textSize="32dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="KAMU BENAR!!!"/>
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/maskot"
+        android:layout_centerHorizontal="true"
+        />
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_info"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapefull"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:layout_below="@id/dialog_info"
+            android:textColor="@android:color/white"
+            android:text="menu"
+            android:layout_marginRight="64dp"
+            android:layout_marginBottom="50dp"/>
+
+        <Button
+            android:id="@+id/dialog_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapefull"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/menu"
+            android:layout_below="@id/dialog_info"
+            android:text="lanjutkan"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

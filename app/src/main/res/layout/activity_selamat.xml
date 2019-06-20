@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/btnclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/close"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:id="@+id/dialog_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:textSize="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="SELAMAT!!!"/>
+    <TextView
+        android:id="@+id/txtselamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dialog_info"
+        android:textSize="32dp"
+        android:layout_centerHorizontal="true"
+        android:text="KAMU BERHASIL"/>
+    <TextView
+        android:id="@+id/txtlevl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtselamat"
+        android:textSize="32dp"
+        android:layout_marginLeft="5dp"
+        android:padding="10dp"
+        android:text="DI LEVEL" />
+    <TextView
+        android:id="@+id/txtlevel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtselamat"
+        android:layout_toRightOf="@id/txtlevl"
+        android:textSize="32dp"
+        android:paddingTop="10dp"
+        android:text="MEDIUM"/>
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/maskot"
+        android:layout_centerHorizontal="true"
+        />
+
+        <Button
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shapefull"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:layout_below="@id/txtlevl"
+            android:textColor="@android:color/white"
+            android:text="menu"
+            android:layout_marginRight="64dp"
+            android:layout_marginBottom="50dp"/>
+
+</RelativeLayout>

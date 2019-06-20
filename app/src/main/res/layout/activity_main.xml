@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Let's make a shape"
+        android:textSize="16pt"
+        android:layout_centerHorizontal="true"/>
+   <ImageView
+       android:id="@+id/logo"
+       android:layout_width="170dp"
+       android:layout_height="250dp"
+       android:layout_below="@+id/title"
+       android:layout_marginTop="64dp"
+       android:background="@drawable/maskot"/>
+    <TextView
+        android:id="@+id/txt_easy"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/logo"
+        android:layout_below="@+id/title"
+        android:text="easy"
+        android:background="@drawable/shapefull"
+        android:textSize="12pt"/>
+    <TextView
+        android:id="@+id/txt_medium"
+        android:layout_width="170dp"
+        android:padding="12dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shapefull"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/logo"
+        android:layout_below="@+id/txt_easy"
+        android:text="medium"
+        android:textSize="12pt"/>
+    <TextView
+        android:id="@+id/txt_hard"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/shapefull"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/logo"
+        android:layout_below="@+id/txt_medium"
+        android:text="hard"
+        android:textSize="12pt"/>
+
+</RelativeLayout>
